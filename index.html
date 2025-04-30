@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Venha E Me Conheça</h1>
+    <nav>
+      <a href="#" onclick="showSection('inicio')">Início</a>
+      <a href="#" onclick="showSection('projetos')">Projetos</a>
+      <a href="#" onclick="showSection('sobre')">Sobre mim</a>
+      <a href="#" onclick="showSection('contato')">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="catalogo active">
+      <h2>Capítulos da Minha Jornada</h2>
+      <div class="cards">
+        <div class="card" onclick="showCard('capitulo1')">
+          <img src="imagens/capitulo1.jpg" alt="Capítulo 1" />
+          <h3>Infância</h3>
+          <p>Onde tudo começou...</p>
+        </div>
+        <div class="card" onclick="showCard('capitulo2')">
+          <img src="file:///C:/Users/cs371234/Downloads/file.PNG" alt="Capítulo 2" />
+          <h3>Primeiros Projetos</h3>
+          <p>Descobrindo meus primeiros passos...</p>
+        </div>
+        <!-- Adicione mais cards aqui -->
+      </div>
+    </section>
+
+    <section id="projetos" class="catalogo">
+      <h2>Meus Projetos</h2>
+      <!-- Conteúdo dos projetos -->
+    </section>
+
+    <section id="sobre" class="catalogo">
+      <h2>Sobre Mim</h2>
+      <!-- Conteúdo sobre você -->
+    </section>
+
+    <section id="contato" class="catalogo">
+      <h2>Contato</h2>
+      <!-- Conteúdo de contato -->
+    </section>
+
+    <section id="capitulo1" class="catalogo">
+      <h2>Infância</h2>
+      <p>Onde tudo começou...</p>
+    </section>
+
+    <section id="capitulo2" class="catalogo">
+      <h2>Primeiros Projetos</h2>
+      <p>Descobrindo minha paixão pela criação.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gabriel Almeida Caetano. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

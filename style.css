@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.catalogo {
+  padding: 40px 20px;
+  display: none;
+}
+
+.catalogo.active {
+  display: block;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  transition: transform 0.3s;
+  animation: animeEntrada 1s ease-out forwards;
+  opacity: 0; /* começa invisível até a animação */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3, .card p {
+  padding: 10px;
+}
+
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@keyframes animeEntrada {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9) rotate(-3deg);
+    filter: brightness(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+}
