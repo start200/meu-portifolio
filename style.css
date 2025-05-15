@@ -83,7 +83,7 @@ footer {
   }
   .img-menor {
   width: 60%;
-  max-width: 400px;
+  max-width: 100px;
   display: block;
   margin: 20px auto;
   border-radius: 10px;
